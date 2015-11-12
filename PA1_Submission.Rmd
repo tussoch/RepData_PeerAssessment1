@@ -90,7 +90,7 @@ The mean number of steps per day for the data with imputed values is `r formatC(
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
-A facted plot was generated showing mean number of steps per 5 minute inerval according to whether the day was a weekday or a weekend day.
+A faceted plot was generated showing mean number of steps per 5 minute inerval according to whether the day was a weekday or a weekend day.
 ```{r, echo=TRUE}
 imputed.activity$daytype[imputed.activity$day == c("Saturday", "Sunday")] <-
         "weekend"
